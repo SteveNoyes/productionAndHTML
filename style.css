@@ -1,0 +1,187 @@
+/* Brand Styles */
+/* Fonts */
+/* 
+  'Nunito Bold Italic'
+  'Nunito Bold'
+  'Nunito Extra Bold'
+  'Nunito Extra Bold Italic'
+  'Nunito Italic'
+  'Nunito Light'
+  'Nunito Medium'
+  'Nunito Regular' 
+*/
+:root {
+  --purple: #5d4586;
+  --dark-blue: #5a9bc9;
+  --green: #acce5a;
+  --teal: #78c6cd;
+  /* Note: Brand Guide has wrong hex */
+  /* --light-blue: rgb(135,195,233); */
+  --light-blue: #87c3e9;
+  --white: #ffffff;
+  --black: #000000;
+}
+body {
+  background-color: var(--teal);
+  font-family: 'Nunito Regular';
+  overflow-x: hidden;
+  /* Needed for footer */
+  padding-bottom: 20px;
+}
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+/* Button style from MMIT Style Guide */
+.purp-btn {
+  background-color: var(--purple);
+  opacity: .6;
+  color: var(--white);
+  font-family: 'Nunito Bold';
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+}
+.purp-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.grn-btn {
+  background-color: var(--green);
+  color: var(--white);
+  opacity: .6;
+  font-family: 'Nunito Bold';
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(231, 231, 231);
+}
+.grn-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* Above the fold section */
+/* Hero Section */
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+/* Typewriter Effect */
+@keyframes typing {
+  0%, 21% { content: ""; }
+  1%, 20% { content: "c"; }
+  2%, 19% { content: "cr"; }
+  3%, 18% { content: "cre"; }
+  4%, 17% { content: "crea"; }
+  5%, 16% { content: "creat"; }
+  6%, 15% { content: "creati"; }
+  7%, 14% { content: "creativ"; }
+  8%, 13% { content: "creative"; }
+  9%, 12% { content: "creatives"; }
+
+  22%, 41% { content: ""; }
+  23%, 40% { content: "d"; }
+  24%, 39% { content: "de"; }
+  25%, 38% { content: "des"; }
+  26%, 37% { content: "desi"; }
+  27%, 36% { content: "desig"; }
+  28%, 35% { content: "design"; }
+  29%, 34% { content: "designe"; }
+  30%, 33% { content: "designers"; }
+
+  42%, 65% { content: ""; }
+  43%, 64% { content: "d"; }
+  44%, 63% { content: "de"; }
+  45%, 62% { content: "dev"; }
+  46%, 61% { content: "deve"; }
+  47%, 60% { content: "devel"; }
+  48%, 59% { content: "develo"; }
+  49%, 58% { content: "develop"; }
+  50%, 57% { content: "develope"; }
+  51%, 56% { content: "developer"; }
+  52%, 55% { content: "developers"; }
+
+  66%, 77% { content: ""; }
+  67%, 76% { content: "M"; }
+  68%, 75% { content: "MM"; }
+  69%, 74% { content: "MMI"; }
+  70%, 73% { content: "MMIT"; }
+
+  78%, 100% { content: "N"; }
+  79%, 99% { content: "No"; }
+  80%, 98% { content: "Nor"; }
+  81%, 97% { content: "Nors"; }
+  82%, 96% { content: "Norst"; }
+  83%, 95% { content: "Norste"; }
+  84%, 94% { content: "Norstel"; }
+  85%, 93% { content: "Norstella"; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typewriter {
+  --caret: currentcolor;
+}
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  @keyframes sequencePopup {
+    0%, 100% { content: "creatives"; }
+    25% { content: "designers"; }
+    50% { content: "developers"; }
+    75% { content: "Norstella"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+/* Portfolio Gallery */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+/* Footer */
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}

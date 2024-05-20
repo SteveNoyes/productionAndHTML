@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Production and HTML</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media screen and (max-width: 400px) {
+      .on-desktop {
+        display: none;
+      }  
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="./assets/images/logos/single-blue.png" alt="" style="height: 40px; border-radius: 30%;"></a>
+        <a class="navbar-brand" href="index.html">Production and HTML</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">Portfolios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/games/games.html">Games</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5 pt-5" style="padding-top: 70px !important;">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg" style=" background-color: #ffffff;">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h3 class="display-5 fw-bold lh-1 pb-3">CDS Presents</h3>
+          <h2 class="display-4 fw-bold lh-1 pb-3">Production and HTML</h2>
+          <h2 style="padding-left: 50px;">we are&nbsp;<span class="typewriter"></span></h2>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0">
+            <img class="rounded-lg-3" src="./assets/images/lightbulb.jpeg" alt="" width="540" style="width: 540px; position: relative; top: 40px;">
+        </div>
+      </div>
+      <div class="pt-lg-5" style="display: flex; justify-content: center;">
+        <a href="#portfolios"><img src="./assets/images/scroll-down.png" alt="" style="padding-top: 90px; width: 4rem; opacity: .2;"></a>
+      </div>
+    </div>
+    <div class="album my-5 pt-5 pb-5 bg-light">
+      <div id="portfolios" class="container album my-5 bg-light">
+        <h2 style="text-align: center; padding-bottom: 30px;">Meet the Team</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/aaron-shields.png" alt="">
+              <div class="card-body">
+                <h2>Aaron Shields</h2>
+                <p class="card-text">"An excuse ain't nothin' but a fixed up lie."<br> -Grandma</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/aaron-shields.html"><button type="button" class="purp-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/steven-noyes.png" alt="">
+              <div class="card-body">
+                <h2>Steven Noyes</h2>
+                <p class="card-text">"How many programmers does it take to change a lightbulb? None. That's a hardware problem."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/steven-noyes.html"><button type="button" class="grn-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/alison-jacobson.png" alt="">
+              <div class="card-body">
+                <h2>Alison Jacobson</h2>
+                <p class="card-text">"We make a living by what we get, but we make a life by what we give." -Winston Churchill</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/alison-jacobson.html"><button type="button" class="purp-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/carlie-sages.png" alt="">
+              <div class="card-body">
+                <h2>Carlie Sages</h2>
+                <p class="card-text">"We better win this sh*t."<br> -Danielle King</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/carlie-sages.html"><button type="button" class="grn-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">2 yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/shakirah-ghant-david.png" alt="">
+              <div class="card-body">
+                <h2>Shakirah Ghant-David</h2>
+                <p class="card-text">"You can't improve what you don't measure."<br> -Peter Drucker</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/shakirah-ghant-david.html"><button type="button" class="purp-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">9 yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/danielle-king.png" alt="">
+              <div class="card-body">
+                <h2>Danielle King</h2>
+                <p class="card-text">"Successful people are not gifted; they just work hard and succeed on purpose." -G.K. Nielson</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/danielle-king.html"><button type="button" class="grn-btn">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">14 yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+            <h2 style="text-align: center; padding-top: 20px;">Meet Our Emotional Support</h2>
+            <p>The real reason we get our work done</p>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Sami and Ozzy.jpg" alt="">
+              <div class="card-body">
+                <h2>Sami and Ozzy</h2>
+                <p class="card-text">"'Cat-naps' is derogatory."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
+                  </div>
+                  <small class="text-muted">12 cat yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Shakirah's Dream Team.jpg" alt="">
+              <div class="card-body">
+                <h2>Shakirah's Dream Team</h2>
+                <p class="card-text">"Children make your life important."<br>-Erma Bambeck</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Hal Swimming Left Square.png" alt="">
+              <div class="card-body">
+                <h2>Hal</h2>
+                <p class="card-text">"I'm sorry Dave, I'm afraid I can't do that" -v. 9000</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Alison's Support System.jpg" alt="">
+              <div class="card-body">
+                <h2>I think it says Canal St.</h2>
+                <p class="card-text">I'm gonna go with that...  Alison's partner</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
+                  </div>
+                  <small class="text-muted">&nbsp;</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Fig Staring Square.png" alt="">
+              <div class="card-body">
+                <h2>Fig <span style="font-size: 15px;">(aka miss figglesworth)</span></h2>
+                <p class="card-text">"Looking good, feline better!"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
+                  </div>
+                  <small class="text-muted">9 months</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Aaron's Support System.jpg" alt="">
+              <div class="card-body">
+                <h2>Aaron's Support Shelf</h2>
+                <p class="card-text">But really, all of our support shelf</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
+                  </div>
+                  <small class="text-muted">&nbsp;</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/Cool Danielle.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Cool Danielle"
+        />
+        <img
+          src="./assets/images/index-gallery/Steven Scheming.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Steven Counting Cards"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/Aaron Fishbowl.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Aaron and the Fishbowl"
+        />
+        <img
+          src="./assets/images/index-gallery/The Best Leaders.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The best leaders"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/talking-heads1.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Talking heads 1"
+        />
+        <img
+          src="./assets/images/index-gallery/Carlie and Shakirah.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Carlie and Shakirah"
+        />
+      </div>
+    </div>
+
+  <!-- Second Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/talking-heads4.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Talking heads 4"
+        />
+        <img
+          src="./assets/images/index-gallery/Danielle Bowling.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Danielle Bowling"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/Fig Working.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Fig Working"
+        />
+        <img
+          src="./assets/images/index-gallery/talking-heads5.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Talking heads 5"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/full-group.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The team in clay"
+        />
+        <img
+          src="./assets/images/index-gallery/Fig in Drink.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Fig in Drink"
+        />
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <img src="./assets/images/logos/full-multi.png" alt="" style="background-color: #ffffff; width: 140px; border-radius: 20px; padding: 10px; margin-bottom: 20px;">
+            <h6 class="pt-4">Subscribe to our newsletter</h6>
+            <a href="./pages/subscribe.html"><button class="purp-btn" type="button">Subscribe</button></a>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <h5 style="text-decoration: underline;">Portfolios</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./pages/danielle-king.html" class="nav-link p-0 text-muted">Danielle King</a></li>
+              <li class="nav-item mb-2"><a href="./pages/aaron-shields.html" class="nav-link p-0 text-muted">Aaron Shields</a></li>
+              <li class="nav-item mb-2"><a href="./pages/steven-noyes.html" class="nav-link p-0 text-muted">Steven Noyes</a></li>
+              <li class="nav-item mb-2"><a href="./pages/alison-jacobson.html" class="nav-link p-0 text-muted">Alison Jacobson</a></li>
+              <li class="nav-item mb-2"><a href="./pages/carlie-sages.html" class="nav-link p-0 text-muted">Carlie Sages</a></li>
+              <li class="nav-item mb-2"><a href="./pages/shakirah-ghant-david.html" class="nav-link p-0 text-muted">Shakirah Ghant-David</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <a href="./pages/games/games.html" style="color: #000000;"><h5 style="text-decoration: underline;">Games</h5></a>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./pages/games/noyes-invader/index.html" class="nav-link p-0 text-muted">Noyes Invaders</a></li>
+              <li class="nav-item mb-2"><a href="./pages/games/tetris/index.html" class="nav-link p-0 text-muted">Tetris</a></li>
+            </ul>
+            <a href="https://github.com/snoyes-mmit/productionAndHTML#readme" target="_blank" style="color: black;"><h6 style="padding-top: 40px;">about this project</h6></a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 Danielle's Dream Team, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
